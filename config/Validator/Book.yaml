@@ -1,0 +1,9 @@
+App\Form\Model\BookDto:
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          min: 1
+          max: 255
+          minMessage: 'Title must be at least {{ limit }} characters long'
+          maxMessage: 'Title cannot be longer than {{ limit }} characters'
